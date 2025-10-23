@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сурикат Кофе</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header class="header">
+    <header>
         <div class="container">
+            <div class="header">
             <img class="logo" src="images\SURIKAT-logo 1.svg" alt="логотип Сурикат Кофе">
             <div class="time-map">
                 <p class="map">
-                    <img src="images\location-svgrepo-com.svg" alt="местоположение">
+                    <img src="images\location-svgrepo-com.svg" alt="местоположение" class="logo-img">
                     Калуга, ул. Кирова 78
                 </p>
                 <div class="time">
@@ -21,44 +27,103 @@
                     <p>сб-вс 10:00-22:00</p>
                 </div>
             </div>
+            </div>
         </div>
     </header>
 
-    <aside class="filter">
-        <div class="container">
-            <a href="#coffee" class="button-filter-link">Кофе</a>
-            <a href="#tea" class="button-filter-link">Чай</a>
-            <a href="#food" class="button-filter-link">Еда</a>
-            <a href="#season" class="button-filter-link">Сезонное меню</a>
-        </div>
-    </aside>
+    <div class="container">
+<main class="main-content">
+        
+            <div class="filter-and-menu">
+                <aside class="filter">
+                    <a href="#coffee" class="button-filter-link">Кофе</a>
+                    <a href="#tea" class="button-filter-link">Чай</a>
+                    <a href="#food" class="button-filter-link">Еда</a>
+                    <a href="#season" class="button-filter-link">Сезонное меню</a>
+                </aside>
 
-<!-- Меню -->
-
-    <main class="main">
-        <div class="container">
             <div class="menu">
 <!-- Кофе -->
-                <section class="menu-cel">
                 <p class="menu-type" id="coffee">Кофе</p>
+                <section class="menu-cel">
+                
                 <div class="menu-item">
                     <figure>
-                    <img src="images\photo_2023-02-08_13-07-32-e1675851082931-324x324.webp" alt="Фильтр кофе">
+                    <img src="images\filter-coffee.webp" alt="Фильтр кофе">
                     <figcaption>Фильтр кофе</figcaption>
                     </figure>
                     <div class="price-obiem">
                         <p class="obiem">300 мл</p>
-                        <p class="price"> 190 ₽</p>
+                        <p class="price">190 ₽</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <figure>
+                    <img src="images\voronkawebp.webp" alt="Воронка">
+                    <figcaption>Воронка Hario v60</figcaption>
+                    </figure>
+                    <div class="price-center">
+                        <p class="price">190 ₽</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <figure>
+                    <img src="images\mokko.webp" alt="Мокко">
+                    <figcaption>Мокко</figcaption>
+                    </figure>
+                    <div class="price-obiem">
+                        <p class="obiem">200 мл</p>
+                        <p class="price">180 ₽</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <figure>
+                    <img src="images\rafwebp.webp" alt="Раф">
+                    <figcaption>Раф</figcaption>
+                    </figure>
+                    <div class="price-obiem">
+                        <p class="obiem">200 мл</p>
+                        <p class="price">180 ₽</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <figure>
+                    <img src="images\glace.webp" alt="Глясе">
+                    <figcaption>Глясе</figcaption>
+                    </figure>
+                    <div class="price-center">
+                        <p class="price">210 ₽</p>
                     </div>
                 </div>
                 </section>
 <!-- Чай -->
-                                <section class="menu-cel">
-                <p class="menu-type" id="tea">Чай</p>
+                                <p class="menu-type" id="tea">Чай</p>
+<section class="menu-cel">
+                
                 <div class="menu-item">
                     <figure>
-                    <img src="images\photo_2023-02-08_13-21-12-324x324.webp" alt="Молочный улун">
+                    <img src="images\tea-milk-ulun.webp" alt="Молочный улун">
                     <figcaption>Молочный улун</figcaption>
+                    </figure>
+                    <div class="price-obiem">
+                        <p class="obiem">400 мл</p>
+                        <p class="price"> 160 ₽</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <figure>
+                    <img src="images\tea-black.webp" alt="Черный чай">
+                    <figcaption>Чай черный</figcaption>
+                    </figure>
+                    <div class="price-obiem">
+                        <p class="obiem">400 мл</p>
+                        <p class="price"> 160 ₽</p>
+                    </div>
+                </div>
+                                <div class="menu-item">
+                    <figure>
+                    <img src="images\tea-black.webp" alt="Зеленый чай">
+                    <figcaption>Чай зеленый</figcaption>
                     </figure>
                     <div class="price-obiem">
                         <p class="obiem">400 мл</p>
@@ -67,52 +132,106 @@
                 </div>
                 </section>
 <!-- Еда -->
+ <p class="menu-type" id="food">Еда</p>
                                 <section class="menu-cel">
-                <p class="menu-type" id="food">Еда</p>
+                
                 <div class="menu-item">
                     <figure>
-                    <img src="images\photo_2024-01-22_13-41-33-324x324.jpg" alt="Завтрак большого суриката">
+                    <img src="images\big-suricat.jpg" alt="Завтрак большого суриката">
                     <figcaption>Завтрак большого суриката</figcaption>
                     </figure>
                     <div class="price-center">
                         <p class="price">160 ₽</p>
                     </div>
                 </div>
-                </section>
-<!-- Сезонное -->
-                                <section class="menu-cel">
-                <p class="menu-type" id="season">Сезонное меню</p>
                 <div class="menu-item">
                     <figure>
-                    <img src="images\photo_2024-01-22_13-41-18-324x324.jpg" alt="Сырники с вишневым соусом">
+                    <img src="images\sandwitchlosos.webp" alt="Седвич с лососем">
+                    <figcaption>Сендвич с лососем</figcaption>
+                    </figure>
+                    <div class="price-center">
+                        <p class="price">290 ₽</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <figure>
+                    <img src="images\kasha.webp" alt="Овсяная каша">
+                    <figcaption>Овсяная каша</figcaption>
+                    </figure>
+                    <div class="price-center">
+                        <p class="price">170 ₽</p>
+                    </div>
+                </div>
+                </section>
+<!-- Сезонное -->
+ <p class="menu-type" id="season">Сезонное меню</p>
+                                <section class="menu-cel">
+                
+                <div class="menu-item">
+                    <figure>
+                    <img src="images\syrnik.jpg" alt="Сырники с вишневым соусом">
                     <figcaption>Сырники с вишневым соусом и сметаной. Без глютена</figcaption>
                     </figure>
                     <div class="price-center">
                         <p class="price">270 ₽</p>
                     </div>
                 </div>
+                <div class="menu-item">
+                    <figure>
+                    <img src="images\glintvein.jpg" alt="Глинтвейн">
+                    <figcaption>Глинтвейн</figcaption>
+                    </figure>
+                    <div class="price-center">
+                        <p class="price">240 ₽</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <figure>
+                    <img src="images\bamble.jpeg" alt="Бамбл">
+                    <figcaption>Бамбл</figcaption>
+                    </figure>
+                    <div class="price-center">
+                        <p class="price">240 ₽</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <figure>
+                    <img src="images\matcha.webp" alt="Матча Латте">
+                    <figcaption>Матча Латте</figcaption>
+                    </figure>
+                    <div class="price-center">
+                        <p class="price">210 ₽</p>
+                    </div>
+                </div>
                 </section>
 
             </div>
-        </div>
+            </div>
     </main>
+</div>
 
 <!-- Футер -->
 
     <footer class="footer">
         <div class="container">
             <div class="foot">
-                <p>©SURIKATcoffee 2025</p>
+                <p class="prava">©SURIKATcoffee 2025</p>
                 <div class="contact">
                     <p>Контакты:</p>
-                    <address>
+                    <address class="address">
                         <a href="tel:+79533171979">+7 (953) 317-19-79</a>
                     </address>
                     <div class="img-contact">
-                        <a href="#" target="_blank"><img src="images\vk-outline-svgrepo-com.svg" alt="Вконтакте"></a>
-                        <a href="#" target="_blank"><img src="images\instagram-svgrepo-com.svg" alt="Инстаграм"></a>
-                        <a href="#" target="_blank"><img src="images\telegram-outline-svgrepo-com.svg" alt="Телеграмм"></a>
-                    </div>
+    <a href="#" target="_blank" class="social-link">
+        <i class="fab fa-vk"></i>
+    </a>
+    <a href="#" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" target="_blank" class="social-link">
+        <i class="fab fa-telegram"></i>
+    </a>
+</div>
                 </div>
             </div>
         </div>
