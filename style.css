@@ -4,6 +4,8 @@
     --background-color: #F8E7DC;
     --background-color-main: #FFF8F2;
     --button: #F6E2CF;
+    --button-color-hover: #97765A;
+    --color-button-hover: #F8E1D9;
     --filter-color: #4D271A;
     --border: rgba(161, 125, 100, 0.27);
     --price-obiem: #E5C2A9;
@@ -15,6 +17,7 @@
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -24,6 +27,7 @@ body {
 
 .container {
     max-width: 1100px;
+    min-width: 1100px;
     margin: 0 auto;
 }
 
@@ -95,6 +99,19 @@ line-height: 130%;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.1s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0 5px 8px rgba(161, 125, 100, 0.2);
+}
+
+.button-filter-link:hover {
+    background-color: var(--button-color-hover);
+    color: var(--color-button-hover);
+}
+
+.button-filter-link:active {
+    transform: scale(0.93);
 }
 
 .filter-and-menu {
@@ -107,7 +124,8 @@ line-height: 130%;
 .main-content {
     background-color: var(--background-color-main);
     padding-bottom: 10rem;
-    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .menu {
@@ -155,6 +173,7 @@ line-height: 130%;
     letter-spacing: 7%;
     color: var(--price);
     margin: 0;
+    user-select: none;
 }
 
 .obiem {
@@ -162,6 +181,7 @@ line-height: 130%;
     letter-spacing: 7%;
     color: var(--obiem);
     margin: 0 0 0 7px;
+    user-select: none;
 }
 
 .price-obiem .price {
@@ -223,10 +243,17 @@ figcaption {
     margin-bottom: 3rem;
 }
 
+
+
 .social-link {
     font-size: 4rem; 
     color: var(--map-color); 
     text-decoration: none;
+    transition: transform 0.2s ease-in;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
 }
 
 .prava {
