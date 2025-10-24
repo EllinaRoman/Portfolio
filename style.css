@@ -6,6 +6,10 @@
     --button: #F6E2CF;
     --filter-color: #4D271A;
     --border: rgba(161, 125, 100, 0.27);
+    --price-obiem: #E5C2A9;
+    --price-obiem-border: #D2B49F;
+    --obiem: #835545;
+    --price: #603629;
     box-sizing: border-box;
 }
 
@@ -20,7 +24,6 @@ body {
 
 .container {
     max-width: 1100px;
-    min-width: 1100px;
     margin: 0 auto;
 }
 
@@ -32,7 +35,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.25)
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .logo-img {
@@ -73,6 +76,8 @@ line-height: 130%;
     flex-direction: column;
     min-width: 180px;
     gap: 20px;
+    position: sticky;
+    top: 50px;
 }
 
 .button-filter-link {
@@ -94,13 +99,15 @@ line-height: 130%;
 
 .filter-and-menu {
     display: flex;
-
+    align-items: flex-start;
 }
 
 /* Main */
 
 .main-content {
     background-color: var(--background-color-main);
+    padding-bottom: 10rem;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 .menu {
@@ -126,6 +133,42 @@ line-height: 130%;
     margin: 0;
     width: 128px;
     height: 30px;
+    background-color: var(--price-obiem);
+    border: 1.2px solid var(--price-obiem-border);
+    border-radius: 8px;
+}
+
+.price-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 128px;
+    height: 30px;
+    background-color: var(--price-obiem);
+    border: 1.2px solid var(--price-obiem-border);
+    border-radius: 8px;
+}
+
+.price {
+    font-size: 1.5rem;
+    letter-spacing: 7%;
+    color: var(--price);
+    margin: 0;
+}
+
+.obiem {
+    font-size: 1.2rem;
+    letter-spacing: 7%;
+    color: var(--obiem);
+    margin: 0 0 0 7px;
+}
+
+.price-obiem .price {
+    font-size: 1.5rem;
+    letter-spacing: 7%;
+    color: var(--price);
+    margin: 0 7px 0 0;
 }
 
 .menu-item {
@@ -144,13 +187,34 @@ figure {
     padding: 0;
 }
 
+.menu-type {
+    font-weight: bold;
+    line-height: 3%;
+    letter-spacing: 7%;
+    font-size: 2.7rem;
+    color: var(--filter-color);
+    padding-top: 7rem;
+    padding-bottom: 4.6rem;
+    margin: 0;
+}
+
+figcaption {
+    font-size: 1.6rem;
+    letter-spacing: 7%;
+    font-weight: 600;
+    color: var(--filter-color);
+    margin-top: 1.3rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+
 /* Footer */
 
 .foot {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.25)
+    box-shadow: 0 0 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .img-contact {
